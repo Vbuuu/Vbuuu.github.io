@@ -14,10 +14,19 @@ body {
     cursor: crosshair;
 }
 
+.star {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background: #fff;
+    right: 0;
+    animation: starTwinkle 3s infinite linear;
+}
+
 .banner {
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('background.png');
+    background-image: linear-gradient(to top, #2e1753, #1f1746, #131537, #0d1028, #050819);
     background-size: cover;
     background-position: center;
     align-items: center;
@@ -78,6 +87,7 @@ body {
     padding: 6px 15px;
     text-decoration: none;
     color: #fff;
+    align-items: center;
 }
 
 .navbar .navbuttons .navb a.selected,
